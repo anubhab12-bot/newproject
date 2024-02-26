@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1><strong> This is Text analyzer. Enter your text below </strong> </h1>
+        <form action = '/removepunctuation/' method = 'get'>
+            <textarea name = 'text' style = "height: 105px; width: 856px;"></textarea>
+            <br></br>
+            <input type = 'checkbox' name = 'removepunc'/> remove Punctuations <br></br>
+            <input type="checkbox" name="fullcaps"> UPPERCASE<br><br>
+            <input type="checkbox" name="extraspaceremover"> Extra Space Remover<br><br>
+            <input type="checkbox" name="newlineremover"> New Lne Remover<br><br>
+            <p> {{charecterCount}}</p>            
+            <button type = 'submit'> Analyze </button><br>
+        </form>
+        {% comment %} <script src="" async defer></script> {% endcomment %}
+    </body>
+</html>
